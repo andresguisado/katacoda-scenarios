@@ -5,7 +5,7 @@
   "time": "10-15 minutes",
   "details": {
     "steps": [
-      { "title": "Step 1 - Create namespace contino", "text": "step1.md" },
+      { "title": "Step 1 - Create namespace contino", "text": "step1.md", "courseData": "env-init.sh" },
       { "title": "Step 2 - Checking contino namespace out", "text": "step3.md" },
       { "title": "Step 2 - Deploy pod in contino namespace", "text": "step2.md" },
       { "title": "Step 4 - Checking pod our", "text": "step4.md" }
