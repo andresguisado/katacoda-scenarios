@@ -1,1 +1,2 @@
-export KUBERNETES_MASTER=http://docker:8080
+launch.sh
+cd ~/
