@@ -1,3 +1,7 @@
+**Pod** is the smallest concept we have in Kubernetes and it is not a container. Pod can consist of one or more containers.
+
+## Tasks
+
 Here is how looks like the pod frontend:
 
 ```
