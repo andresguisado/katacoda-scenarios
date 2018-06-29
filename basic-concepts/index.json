@@ -18,14 +18,18 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [{"file": "pod-frontend.yaml", "target": "./"}]
+      "host01": [{"file": "pod-frontend.yaml", "target": "~/"}]
     },
     "files": [
       "app.js"
     ]
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "hideintro": true,
+    "hidefinish": true,
+    "uilayout": "editor-terminal",
+    "uisettings": "yaml",
+    "icon": "fa-kubernetes"
   },
   "backend": {
     "imageid": "kubernetes"
