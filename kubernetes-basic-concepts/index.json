@@ -1,6 +1,6 @@
 {
   "title": "Kubernetes Basic Concepts",
-  "description": "Exercises to get familiar with the Kubernetes basic concepts",
+  "description": "Learn about Kubernetes basic concepts: Pods, namespaces, daemonsets, jobs, initcontainer..",
   "difficulty": "Beginner",
   "time": "10-15 minutes",
   "details": {
