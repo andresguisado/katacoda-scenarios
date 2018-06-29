@@ -1,17 +1,18 @@
 {
   "title": "Kubernetes Basic Concepts",
-  "description": "Exercises to get familiar with Kubernetes basic concepts",
-  "difficulty": "beginner",
+  "description": "Exercises to get familiar with the Kubernetes basic concepts",
+  "difficulty": "Beginner",
   "time": "10-15 minutes",
   "details": {
     "steps": [
-      { "title": "Step 1 - Create contino namespace", "text": "step1.md", "code": "env-init.sh"},
+      { "title": "Step 1 - Create contino namespace", "text": "step1.md"},
       { "title": "Step 2 - Checking contino namespace out", "text": "step2.md"},
       { "title": "Step 3 - Deploy frontend pod in contino namespace", "text": "step3.md"},
       { "title": "Step 4 - Checking frontend pod out", "text": "step4.md"}
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "env-init.sh"
     },
     "finish": {
       "text": "finish.md"

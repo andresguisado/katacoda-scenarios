@@ -1,4 +1,4 @@
 
-List up namespaces:
+**List namespaces up:**
 
 `kubectl get namespaces`{{execute}}

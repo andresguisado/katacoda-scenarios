@@ -2,7 +2,7 @@
 
 ## Tasks
 
-Here is how looks like the pod frontend:
+**Here is how looks like the pod frontend:**
 
 ```
 apiVersion: v1
@@ -20,6 +20,6 @@ spec:
     image: nginx
 ```
 
-Deploy it: 
+**Deploy it:** 
 
 `kubectl apply -f pod-frontend.yaml`{{execute}}
