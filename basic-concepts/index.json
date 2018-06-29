@@ -5,31 +5,32 @@
   "time": "10-15 minutes",
   "details": {
     "steps": [
-      { "title": "Step 1 - Create namespace contino", "text": "step1.md", "code": "env-init.sh" },
+      { "title": "Step 1 - Create namespace contino", "text": "step1.md"},
       { "title": "Step 2 - Checking contino namespace out", "text": "step3.md" },
       { "title": "Step 2 - Deploy pod in contino namespace", "text": "step2.md" },
       { "title": "Step 4 - Checking pod our", "text": "step4.md" }
     ],
     "intro": {
       "text": "intro.md",
-      "courseData": "env-init.sh"
+      "courseData": "env-init.sh",
+      "code": "env-init.sh"
     },
     "finish": {
       "text": "finish.md"
     },
     "assets": {
-      "client": [{"file": "pod-fronted.yaml", "target": "~/"}]
+      "host01": [{"file": "*", "target": "/root"}]
     },
     "files": [
       "app.js"
     ]
   },
   "environment": {
+    "icon": "fa-kubernetes",
     "hideintro": true,
     "hidefinish": true,
     "uilayout": "editor-terminal",
-    "uisettings": "yaml",
-    "icon": "fa-kubernetes"
+    "uisettings": "yaml"
   },
   "backend": {
     "imageid": "kubernetes"
