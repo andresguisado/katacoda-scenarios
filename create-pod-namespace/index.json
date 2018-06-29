@@ -21,6 +21,7 @@
     "uilayout": "terminal"
   },
   "backend": {
+    "port": 8080,
     "imageid": "kubernetes"
   }
 }
