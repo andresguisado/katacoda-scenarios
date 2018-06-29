@@ -18,7 +18,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [{"file": "pod-frontend.yaml", "target": "/root"}]
+      "host01": [{"file": "pod-fronted.yaml", "target": "~/"}]
     },
     "files": [
       "app.js"
