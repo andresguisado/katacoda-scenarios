@@ -1,4 +1,3 @@
-# Check it out
 
 List up namespaces:
 
