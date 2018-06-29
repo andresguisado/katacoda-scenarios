@@ -1,13 +1,14 @@
 {
-  "title": "Create a pod in a specific namespace",
+  "title": "Basic Concepts",
   "description": "Deploy a pod into a namespace",
   "difficulty": "beginner",
-  "time": "2 minutes",
+  "time": "10-15 minutes",
   "details": {
     "steps": [
       { "title": "Step 1 - Create namespace contino", "text": "step1.md" },
+      { "title": "Step 2 - Checking contino namespace out", "text": "step3.md" },
       { "title": "Step 2 - Deploy pod in contino namespace", "text": "step2.md" },
-      { "title": "Step 3 - Checking out", "text": "step3.md" }
+      { "title": "Step 4 - Checking pod our", "text": "step4.md" }
     ],
     "intro": {
       "text": "intro.md",
@@ -17,8 +18,11 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [{"file": "pod-in-namespace.yaml", "target": "/root"}]
-    }
+      "host01": [{"file": "pod-frontend.yaml", "target": "~/"}]
+    },
+    "files": [
+      "app.js"
+    ]
   },
   "environment": {
     "uilayout": "editor-terminal"
