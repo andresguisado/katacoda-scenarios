@@ -15,13 +15,15 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{"file": "pod-in-namespace.yaml", "target": "/root"}]
     }
   },
   "environment": {
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "port": 8080,
-    "imageid": "kubernetes"
+    "imageid": "kubernetes-cluster"
   }
 }
