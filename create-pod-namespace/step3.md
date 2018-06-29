@@ -1,1 +1,3 @@
-`kubectl get pods --namespace contino`{{execute}}
+List up namespaces:
+
+`kubectl get namespaces`{{execute}}
