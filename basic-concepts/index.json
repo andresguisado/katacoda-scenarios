@@ -20,10 +20,7 @@
     },
     "assets": {
       "host01": [{"file": "pod-fronted.yaml", "target": "/root"}]
-    },
-    "files": [
-      "app.js"
-    ]
+    }
   },
   "environment": {
     "icon": "fa-kubernetes",
