@@ -1,5 +1,3 @@
-Modify ```frontend-pod.yaml``` to do the following:
-
 ## Tasks
 
 1- Add three labels:
@@ -45,7 +43,7 @@ spec:
 
 **To deploy it run the folllowing command:** 
 
-`kubectl apply -f frontend-pod.yaml`{{execute}}
+`kubectl apply -f frontend-pod2.yaml`{{execute}}
 
 ## Validation
 
