@@ -18,4 +18,4 @@ spec:
 
 **To deploy it run the folllowing command:** 
 
-`kubectl apply -f pod-frontend.yaml`{{execute}}
+`kubectl apply -f frontend-pod.yaml`{{execute}}
