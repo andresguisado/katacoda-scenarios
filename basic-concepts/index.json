@@ -1,19 +1,17 @@
 {
-  "title": "Basic Concepts",
-  "description": "Deploy a pod into a namespace",
+  "title": "Kubernetes Basic Concepts",
+  "description": "Exercises to get familiar with Kubernetes basic concepts",
   "difficulty": "beginner",
   "time": "10-15 minutes",
   "details": {
     "steps": [
       { "title": "Step 1 - Create namespace contino", "text": "step1.md"},
-      { "title": "Step 2 - Checking contino namespace out", "text": "step2.md" },
-      { "title": "Step 3 - Deploy pod in contino namespace", "text": "step3.md" },
-      { "title": "Step 4 - Checking pod our", "text": "step4.md" }
+      { "title": "Step 2 - Checking contino namespace out", "text": "step2.md"},
+      { "title": "Step 3 - Deploy pod in contino namespace", "text": "step3.md"},
+      { "title": "Step 4 - Checking pod out", "text": "step4.md"}
     ],
     "intro": {
-      "text": "intro.md",
-      "courseData": "env-init.sh",
-      "code": "set-env.sh"
+      "text": "intro.md"
     },
     "finish": {
       "text": "finish.md"
