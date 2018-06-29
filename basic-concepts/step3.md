@@ -18,4 +18,4 @@ spec:
 
 Deploy it: 
 
-`kubectl apply -f pod-in-namespace.yaml`{{execute}}
+`kubectl apply -f pod-frontend.yaml`{{execute}}
