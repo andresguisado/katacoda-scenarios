@@ -1,1 +1,1 @@
-`kubectl create namespace contino`{{execute}}
+`kubectl apply -f pod-in-namespace`{{execute}}
