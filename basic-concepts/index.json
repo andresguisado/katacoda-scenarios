@@ -21,11 +21,7 @@
     }
   },
   "environment": {
-    "icon": "fa-kubernetes",
-    "hideintro": true,
-    "hidefinish": true,
     "uilayout": "editor-terminal",
-    "uisettings": "yaml",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
   },
   "backend": {
