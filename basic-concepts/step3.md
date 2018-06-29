@@ -1,3 +1,5 @@
+Here is how looks like the pod frontend:
+
 ```
 apiVersion: v1
 kind: Pod
@@ -13,5 +15,7 @@ spec:
   - name: nginx
     image: nginx
 ```
+
+Deploy it: 
 
 `kubectl apply -f pod-in-namespace.yaml`{{execute}}
