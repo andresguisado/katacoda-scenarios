@@ -24,7 +24,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "port": 8080,
-    "imageid": "kubernetes-cluster"
+    "imageid": "kubernetes"
   }
 }
