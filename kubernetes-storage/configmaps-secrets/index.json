@@ -1,11 +1,11 @@
 {
-  "title": "Basic Deployments",
-  "description": "Manage basic Deployments",
+  "title": "ConfigMaps and Secrets",
+  "description": "Manage ConfigMaps and Secrets",
   "difficulty": "beginner",
   "time": "5 minutes",
   "details": {
     "steps": [
-      { "title": "Jobs", "text": "deployment-annotation.md"}
+      { "title": "Create a Daemon Set", "text": "configmaps.md"}
     ],
     "intro": {
       "text": "intro.md",

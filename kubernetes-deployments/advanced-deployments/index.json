@@ -5,7 +5,7 @@
   "time": "5 minutes",
   "details": {
     "steps": [
-      { "title": "Create a Daemon Set", "text": "daemonset.md"}
+      { "title": "Create a Daemon Set", "text": "deployment-rolling-update.md"}
     ],
     "intro": {
       "text": "intro.md",

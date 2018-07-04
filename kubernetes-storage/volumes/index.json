@@ -1,11 +1,11 @@
 {
-  "title": "Basic Deployments",
-  "description": "Manage basic Deployments",
+  "title": "Volumes",
+  "description": "Manage Volumes",
   "difficulty": "beginner",
   "time": "5 minutes",
   "details": {
     "steps": [
-      { "title": "Jobs", "text": "deployment-annotation.md"}
+      { "title": "Create a Daemon Set", "text": "volumes.md"}
     ],
     "intro": {
       "text": "intro.md",
