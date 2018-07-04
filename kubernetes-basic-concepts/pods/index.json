@@ -17,7 +17,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [{"file": "*", "target": "~/"}]
+      "client": [{"file": "*", "target": "/root"}]
     }
   },
   "environment": {
