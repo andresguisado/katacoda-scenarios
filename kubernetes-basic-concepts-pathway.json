@@ -7,6 +7,11 @@
         "course_id": "pods",
         "title": "Pods",
         "description": "Introduction to Pods, Namespaces, DaemonSets and etc"
+      },
+      {
+        "course_id": "r-conversions",
+        "title": "XX",
+        "description": "Introduction to Pods, Namespaces, DaemonSets and etc"
       }
      ]
 }
