@@ -6,10 +6,12 @@ Pods are running on **namespaces**. Kubernetes creates three namespaces in the b
 
 * **kube-system**: Where runs Kubernetes controllers and management processes
 * **kube-public**: It contains a single ConfigMap object, cluster-info, that aids discovery and security bootstrap (basically, contains the CA for the cluster). This object is readable without authentication.
-* **default**: Default namespaces which is used when is deployed any Kubernetes object.
+* **default**: Namespace which is used to deployed any Kubernetes object by default.
 
 Other namespaces can be created in order to isolate Pods to separate workloads from each other and set up resources constraints. It could fit with environment segregation.
 
+**Label** is a metadata to identify information. It can be used for queries.
+**Volume** serves data to the pod.
 
 
 
