@@ -5,9 +5,10 @@
   "time": "5 minutes",
   "details": {
     "steps": [
-      { "title": "Step 1 - Create contino namespace", "text": "namespaces.md"},
-      { "title": "Step 2 - Deploy frontend pod in contino namespace", "text": "pod.md"},
-      { "title": "Step 3 - Configure label, port and docker image", "text": "pod-port-label.md"}
+      { "title": "Run a pod in the default namespace", "text": "pod-run.md"},
+      { "title": "Create contino namespace", "text": "namespaces.md"},
+      { "title": "Deploy frontend pod in contino namespace", "text": "pod-yaml.md"},
+      { "title": "Configure label, port and docker image", "text": "pod-port-label.md"}
     ],
     "intro": {
       "text": "intro.md",
