@@ -1,5 +1,6 @@
 {
     "title": "Kubernetes Basic Concepts",
+    "icon": "fa-kubernetes",
     "description": "Learn how to use Kubernetes basic concepts: Pods, namespaces, daemonsets, jobs, init-container....",
     "courses": [  
       {
