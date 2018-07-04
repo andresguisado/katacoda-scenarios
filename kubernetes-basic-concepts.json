@@ -6,6 +6,11 @@
         "course_id": "pods",
         "title": "Pods",
         "description": "Introduction to Pods, Namespaces, DaemonSets and etc"
+      },
+      {
+        "course_id": "example",
+        "title": "Example",
+        "description": "Introduction to Pods, Namespaces, DaemonSets and etc"
       }
      ]
 }
