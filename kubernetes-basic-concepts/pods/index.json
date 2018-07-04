@@ -1,8 +1,8 @@
 {
-  "title": "K8s Pods",
+  "title": "Pods",
   "description": "Learn about Kubernetes basic concepts: Pods, namespaces, daemonsets, jobs, initcontainer..",
   "difficulty": "beginner",
-  "time": "10-15 minutes",
+  "time": "5 minutes",
   "details": {
     "steps": [
       { "title": "Step 1 - Create contino namespace", "text": "step1.md"},
