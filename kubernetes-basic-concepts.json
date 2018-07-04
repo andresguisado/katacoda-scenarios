@@ -3,8 +3,8 @@
     "description": "Learn how to use Kubernetes basic concepts: Pods, namespaces, daemonsets, jobs, init-container....",
     "courses": [  
       {
-        "course_id": "pods",
-        "title": "Pods",
+        "course_id": "k8s-pods",
+        "title": "K8s Pods",
         "description": "Introduction to Pods, Namespaces, DaemonSets and etc"
       }
      ]
