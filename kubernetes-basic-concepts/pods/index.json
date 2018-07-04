@@ -1,5 +1,5 @@
 {
-  "title": "Kubernetes Basic Concepts",
+  "title": "Pods",
   "description": "Learn about Kubernetes basic concepts: Pods, namespaces, daemonsets, jobs, initcontainer..",
   "difficulty": "Beginner",
   "time": "10-15 minutes",
