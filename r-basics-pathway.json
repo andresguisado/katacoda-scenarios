@@ -3,8 +3,8 @@
   "description": "Learn basics of the R language",
   "courses": [
     {
-      "course_id": "r-conversions",
-      "title": "Types conversions in R",
+      "course_id": "pods",
+      "title": "Pods",
       "description": "Introduction to types conversions for R types"
     }
   ]
