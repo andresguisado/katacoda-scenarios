@@ -5,9 +5,11 @@
   "time": "5 minutes",
   "details": {
     "steps": [
-      { "title": "Deploy frontend pod in contino namespace", "text": "pod-yaml.md"},
-      { "title": "Create contino namespace", "text": "namespaces.md"},
-      { "title": "Configure label, port and docker image", "text": "pod-port-label.md"},
+      { "title": "Kubernertes Namespaces", "text": "k8s-namespaces.md"},
+      { "title": "Create contino namespace", "text": "contino-namespace.md"},
+      { "title": "Create a pod", "text": "pod-yaml.md"},
+      { "title": "Schedule a pod into the Contino namespace", "text": "contino-pod-namespace.md"},
+      { "title": "Configure label, port and docker image", "text": "contino-pod-port-label.md"},
       { "title": "Pod Node Selector", "text": "pod-nodeselector.md"}
     ],
     "intro": {
@@ -22,7 +24,7 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal",
+    "uilayout": "terminal-terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
   },
   "backend": {

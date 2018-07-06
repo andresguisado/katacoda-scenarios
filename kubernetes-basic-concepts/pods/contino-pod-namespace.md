@@ -1,6 +1,4 @@
-**Pod** is the smallest concept we have in Kubernetes. It is not a container, Pod can consist of one or more containers.
-
-## Create a pod
+## Create a pod in the Contino namespace
 
 We are using a nginx docker image to create our pod:
 
