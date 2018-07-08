@@ -1,12 +1,6 @@
 [**Pod**](https://kubernetes.io/docs/concepts/workloads/pods/pod/) is the smallest concept we have in Kubernetes. It is not a container. Pod consist of one or more containers.
 
-<img src="/andresguisado/courses/kubernetes-basic-concepts/pods/assets/pod.png" alt="Pod">
-
-
-<img src="../assets/pod.png" alt="Pod">
-
-
-![Pod](../assets/pod.png?raw=true "Pod")
+<img src="/andresguisado/courses/kubernetes-basic-concepts/pods/assets/pod.png" alt="Pod" class="center">
 
 Pods are running on [**namespaces**](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/). Kubernetes creates three namespaces in its bootstrapping process as follows:
 
