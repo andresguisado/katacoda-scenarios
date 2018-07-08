@@ -4,14 +4,11 @@ Let's create **dev-service1** namespace:
 
 `kubectl create namespace dev-service1`{{execute}}
 
-Or you can create a YAML file and apply it, just like any other Kubernetes resource:
+Or you can create a YAML file and apply it, just like any other Kubernetes resource.
 
-```
-kind: Namespace
-apiVersion: v1
-metadata:
-    name: test
-```
+Look at the file `test-namespace.yaml`{{open}}
+
+Create test namespace:
 
 `kubectl apply -f test-namespace.yaml`{{execute}}
 

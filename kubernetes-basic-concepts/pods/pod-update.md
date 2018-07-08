@@ -1,6 +1,6 @@
 We are going to update our happypanda pod running in **dev-service1** namespace and to do that you need to apply ```pod-update.yaml```.
 
-Look at the file ```/pod-update.yaml```{{open}:
+Look at the file `/pod-update.yaml`{{open}]:
 
 1. Pods labels has been added in the metadata section
 2. Container image has been updated in the containers section 
