@@ -43,3 +43,7 @@ We can delete Pods by using a yaml file or a single command:
 or 
 
 `kubectl delete pod happypanda`{{execute}}
+
+Check happypanda por has been deleted:
+
+`kubectl get pods`{{execute}}

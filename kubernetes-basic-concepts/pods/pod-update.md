@@ -1,6 +1,6 @@
 We are going to update our happypanda pod running in **dev-service1** namespace and to do that you need to apply ```pod-update.yaml```.
 
-Look at the file `/pod-update.yaml`{{open}]:
+Look at the file `/pod-update.yaml`{{open}}:
 
 1. Pods labels has been added in the metadata section
 2. Container image has been updated in the containers section 
@@ -11,7 +11,7 @@ Look at the file `/pod-update.yaml`{{open}]:
 
 A pod can be updated by applying a yaml file, let's apply our ```pod-update.yaml``` file with the above changes:
 
-`kubectl apply -f pod-namespace.yaml`{{execute}}
+`kubectl apply -f pod-update.yaml`{{execute}}
 
 
 ### Didn't it work? What happend?
