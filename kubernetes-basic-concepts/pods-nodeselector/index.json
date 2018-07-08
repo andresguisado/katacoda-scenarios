@@ -1,0 +1,28 @@
+{
+  "title": "Pod Node Selector",
+  "description": "Assign pod onto a node",
+  "difficulty": "beginner",
+  "time": "3 minutes",
+  "details": {
+    "steps": [
+      { "title": "Assign pods onto a node", "text": "pod-nodeselector.md"}
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [{"file": "*.yaml", "target": "/root"}]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster"
+  }
+}
