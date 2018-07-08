@@ -15,18 +15,7 @@ Kubernetes API Reference is helping us out to configure Kubernetes objects by ya
 
 >**NOTE:** As an interesting fact, Kubernetes API is using [Swaggerv.1.2](https://swagger.io/) and [OpenAPI](https://www.openapis.org/) but fron Kubernetes v.1.10 Swaggerv is deprecated and it will get removed in Kubernetes v.1.14.
 
-Open ```pod.yaml``` file from the editor you can find on the right 
-
-```
-apiVersion: v1
-kind: Pod
-metadata:
-  name: happypanda
-spec:
-  containers:
-  - name: nginx
-    image: nginx
-```
+Look at the file `/root/pod.yaml`{{open}}
 
 The pod name is ```happypanda``` and it deploys a nginx container image from docker hub public registry.
 
