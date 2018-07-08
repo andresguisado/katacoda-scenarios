@@ -20,7 +20,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [{"file": "*.yaml", "target": "/contino-pods"}]
+      "host01": [{"file": "*.yaml", "target": "/pod-manifests"}]
     }
   },
   "environment": {
