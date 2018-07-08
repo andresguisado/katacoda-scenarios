@@ -1,2 +1,2 @@
-mkdir /contino-pods
+mkdir /pods-manifests
 launch.sh
