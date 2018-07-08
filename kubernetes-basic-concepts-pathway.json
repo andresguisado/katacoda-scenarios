@@ -9,7 +9,7 @@
         "description": "Introduction to Pods and Namespaces"
       },
       {
-        "course_id": "pod node selector",
+        "course_id": "pods-nodeselector",
         "title": "Pod - Node Selector",
         "description": "Introduction to Node Selector"
       },
