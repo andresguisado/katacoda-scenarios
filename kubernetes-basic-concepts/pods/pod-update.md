@@ -52,4 +52,10 @@ Our happypanda pod is now running with labels, port specification and a new cont
 
 ### Clean up
 
+Delete pod:
+
 `kubectl delete pod happypanda -n dev-service1`{{execute}}
+
+Delete namespace:
+
+`kubectl delete namespace dev-service1`{{execute}}
