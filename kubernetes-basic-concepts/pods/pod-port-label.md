@@ -32,7 +32,7 @@ A pod can be updated by applying a yaml file, let's apply our pod-namespace.yaml
 `kubectl apply -f pod-namespace.yaml`{{execute}}
 
 
-### What happend? Didn't it work? 
+### Didn't it work? What happend?
 
 Ok, let's review ports field at the [Kubernetes API Reference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#container-v1-core) :
 
@@ -59,4 +59,5 @@ Check it out:
 
 Our happypanda pod is now running with labels, port specification and a new container image!
 
+`kubectl get pod -n dev-service1`{{execute}}
 

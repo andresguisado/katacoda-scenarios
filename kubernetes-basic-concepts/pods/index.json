@@ -8,9 +8,9 @@
       { "title": "Namespaces", "text": "k8s-namespaces.md"},
       { "title": "Create a new namespace", "text": "new-namespace.md"},
       { "title": "Create a pod", "text": "pod-yaml.md"},
-      { "title": "Schedule a pod into a namespace", "text": "pod-namespace.md"},
+      { "title": "Schedule a pod in a namespace", "text": "pod-namespace.md"},
       { "title": "Configure/Update label, port and container image", "text": "pod-port-label.md"},
-      { "title": "Set up a Pod Node Selector", "text": "pod-nodeselector.md"}
+      { "title": "Assign pods onto a node", "text": "pod-nodeselector.md"}
     ],
     "intro": {
       "text": "intro.md",

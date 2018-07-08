@@ -33,5 +33,5 @@ Check test namespaces has been successfully deleted:
 
 `kubectl get namespaces`{{execute}}
 
->We are not going to remove ```dev-service1``` namespace as we will use it.
+>Note: We are not going to remove ```dev-service1``` namespace as we will use it.
 
