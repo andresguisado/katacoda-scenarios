@@ -13,9 +13,9 @@ In this exercise, we want to create a Pod and first of all, we are going to chec
 
 Kubernetes API Reference is helping us out to configure Kubernetes objects by yaml files. 
 
->NOTE: As an interesting fact, Kubernetes API is using [Swaggerv.1.2](https://swagger.io/) and [OpenAPI](https://www.openapis.org/) but fron Kubernetes v.1.10 Swaggerv is deprecated and it will get removed in Kubernetes v.1.14.
+>**NOTE:** As an interesting fact, Kubernetes API is using [Swaggerv.1.2](https://swagger.io/) and [OpenAPI](https://www.openapis.org/) but fron Kubernetes v.1.10 Swaggerv is deprecated and it will get removed in Kubernetes v.1.14.
 
-We are going to use the following Pod specification for this exercise:
+Open ```pod.yaml``` file from the editor you can find on the right 
 
 ```
 apiVersion: v1
