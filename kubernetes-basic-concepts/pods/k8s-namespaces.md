@@ -1,4 +1,4 @@
-**Namespaces** isolates Pods to separate workloads from each other and set up resource constrainsts. It could fit with environment segregation.
+**Namespaces** isolates pods to separate workloads from each other and set up resource constrainsts. It could fit with environment segregation.
 
 
 ## Discover Kubernetes namespaces 
@@ -14,22 +14,23 @@ We can see three namespaces as follows:
 
 ### kube-system
 
-This namespace has object created by Kubernetes system:
+This namespace has objects created by Kubernetes system:
 
-`kubectl get pods -n kube-system`{{execute}}
+`clear & kubectl get pods -n kube-system`{{execute}}
 
 ### kube-public
 
 This namespace just contains a configmap which has the [bootstrapping and certificate](https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/) information of the K8s cluster:
 
-`kubectl get pods -n kube-public`{{execute}}
+`clear & kubectl get pods -n kube-public`{{execute}}
 
-`kubectl get configmap -n kube-public  cluster-info -o yaml`{{execute}}
+`clear & kubectl get configmap -n kube-public  cluster-info -o yaml`{{execute}}
 
 This namespace could be treated as a namespace to run any object which should be visible and readable throughout the whole cluster.
 
 ### default
+Kubernetes sets this namespaces up out of the box to use it for objects with no other namespace:
 
-The default namespace for objects with no other namespace:
+`clear & kubectl get pods -n default`{{execute}}
 
-`kubectl get pods -n kube-system`{{execute}}
+This namespace doesn't have anyting special, except you can't delete it.

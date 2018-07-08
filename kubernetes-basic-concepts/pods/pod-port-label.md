@@ -23,12 +23,34 @@ ports:
   protocol: TCP
 ```
 
-**To deploy it run the folllowing command:** 
+### Update Pod 
+
+A pod can be updated by applying a yaml file with changes, let's apply our pod-namespace.yaml file with the above changes:
 
 `kubectl apply -f pod-namespace.yaml`{{execute}}
 
-## Validation
 
-**Describe frontend pod up:**
+### What happend? Didn't it work? 
 
-`kubectl describe pod happy-panda --namespace dev-service1`{{execute}}
+Ok, let's review ports field at the [Kubernetes API Reference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#container-v1-core) :
+
+<p style="text-align:center;"><img src="/andresguisado/courses/kubernetes-basic-concepts/pods/assets/ports.png" alt="Ports"></p>
+
+
+In Kubernetes there're some fields can't be updated, you can find them at the Kubernetes API Reference.
+
+In order to update those fields, we should delete the pod and create it up again.
+
+### Fixing it 
+
+Delete the pod:
+
+`kubectl delete pod happypanda -n dev-service1`{{execute}}
+
+Apply the yaml file:
+
+`kubectl apply -f pod-namespace.yaml`{{execute}}
+
+Our happypanda pod is now running with labels, port specification and a new container image:
+
+`kubectl describe pod happypanda --namespace dev-service1`{{execute}}
