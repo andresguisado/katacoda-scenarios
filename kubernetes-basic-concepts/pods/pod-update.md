@@ -3,7 +3,7 @@ We are going to update our happypanda pod running in **dev-service1** namespace 
 Look at the file `/pod-update.yaml`{{open}}:
 
 1. Pods labels has been added in the metadata section
-2. Container image has been updated in the containers section 
+2. Container image has been updated in the containers section. Notice that you can specify image tags if not, latest is used.
 3. Pod ports has been added in the containers section
 
 
@@ -50,3 +50,6 @@ Our happypanda pod is now running with labels, port specification and a new cont
 
 `kubectl get pod -n dev-service1`{{execute}}
 
+### Clean up
+
+`kubectl delete pod happypanda -n dev-service1`{{execute}}
