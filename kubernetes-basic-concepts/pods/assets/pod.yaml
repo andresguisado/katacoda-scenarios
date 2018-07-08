@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: contino-pod
+  name: happypanda
 spec:
   containers:
   - name: nginx

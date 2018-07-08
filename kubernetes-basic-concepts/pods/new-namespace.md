@@ -1,4 +1,3 @@
-
 ## Tasks
 
 Create **dev-service1** namespace:
@@ -7,6 +6,6 @@ Create **dev-service1** namespace:
 
 ## Validation
 
-**List namespaces up:**
+List namespaces up:
 
 `kubectl get namespaces`{{execute}}

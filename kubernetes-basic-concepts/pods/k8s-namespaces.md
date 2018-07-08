@@ -9,7 +9,7 @@ Let's take a look at the initial Kubernetes namespaces:
 
 We can see three namespaces as follows:
 
-<img src="/andresguisado/courses/kubernetes-basic-concepts/pods/assets/namespaces.png" alt="Namespaces">
+<p style="text-align:center;"><img src="/andresguisado/courses/kubernetes-basic-concepts/pods/assets/namespaces.png" alt="Namespaces"></p>
 
 
 ### kube-system
