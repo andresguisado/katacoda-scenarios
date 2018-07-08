@@ -1,33 +1,17 @@
-We are going to update our happypanda pod running in **dev-service1** namespace and to do that you need to modify the ```pod-namespace.yaml``` file, adding the following fields:
+We are going to update our happypanda pod running in **dev-service1** namespace and to do that you need to apply ```pod-update.yaml```.
 
+Hovwever, let's take a look at the file first by clicking on it from the editor we can find on the right.
 
-1. Add pods labels in metadata section:
+Put your attention on these three new specifications:
 
-```
-labels: 
-  app: redis
-  segment: backend
-  company: mycompany
-```
-2. Replace the container image in containers section to:
+1. Pods labels in the metadata section
+2. Container image in the containers section to
+3. Pod ports in the containers section
 
-```
-containers:
-- name: redis
-  image: redis
-```
-3. Configure redis port in containers section:
-
-```
-ports:
-- name: redisport
-  containerPort: 6379
-  protocol: TCP
-```
 
 ### Update Pod 
 
-A pod can be updated by applying a yaml file, let's apply our pod-namespace.yaml file with the above changes:
+A pod can be updated by applying a yaml file, let's apply our ```pod-update.yaml``` file with the above changes:
 
 `kubectl apply -f pod-namespace.yaml`{{execute}}
 
@@ -51,7 +35,7 @@ Delete the pod:
 
 Apply the yaml file:
 
-`kubectl apply -f pod-namespace.yaml`{{execute}}
+`kubectl apply -f pod-update.yaml`{{execute}}
 
 Check it out:
 
