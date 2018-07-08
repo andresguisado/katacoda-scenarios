@@ -1,30 +1,12 @@
-## Create a pod in the Contino namespace
 
+Click on the ```pod-namespace.yaml``` file that you can find in the editor panel on the right. Notice that it has been configured to schedule a pod in *dev-service1* namespace.
 
-```
-apiVersion: v1
-kind: Pod
-metadata:
-  name: contino-pod
-  namespace: contino
-spec:
-  containers:
-  - name: nginx
-    image: nginx
-```
+Let's apply this yaml file:
 
-**Let's create the above pod:** 
-
-`kubectl apply -f contino-pod.yaml`{{execute}}
+`kubectl apply -f pod-namespace.yaml`{{execute}}
 
 ## Validation
 
-**List our pod up:**
+List pods up from dev-service1 namespace:
 
-`kubectl get pods`{{execute}}
-
-Oops! What's going on? I can't see my pod!
-
-We need to specify the namespace from where we want to retrieve the pods:
-
-`kubectl get pods -n contino`{{execute}}
+`kubectl get pods -n dev-service1`{{execute}}

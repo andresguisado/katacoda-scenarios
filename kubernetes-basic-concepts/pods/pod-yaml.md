@@ -16,14 +16,14 @@ We are going to use the following Pod specification for this exercise:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: contino-pod
+  name: happypanda
 spec:
   containers:
   - name: nginx
     image: nginx
 ```
 
-## Create Pod
+## Create a Pod
 
 By using kubectl we authenticate against the Kubernetes API and apply our object into the Kubernetes Cluster:
 
@@ -35,4 +35,14 @@ In order to see our pod running we need to ask the Kubernetes API for the pods a
 
 `kubectl get pods`{{execute}}
 
-Notice that it is running on default namespace since we didn't set any namespace in our specification. Kubernetes uses default namespace to deploy objects when you don't specify this.
+Notice that it is running on the default namespace since we didn't set any namespace in our specification. Kubernetes uses default namespace to deploy objects when you don't specify this.
+
+## Delete a Pod
+
+There are two options here, we can use the same yaml file or a single command:
+
+`kubectl delete -f pod-namespace.yaml`{{execute}}
+
+or 
+
+`kubectl delete pod happypanda`{{execute}}
