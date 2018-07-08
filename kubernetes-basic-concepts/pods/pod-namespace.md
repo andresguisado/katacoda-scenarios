@@ -1,12 +1,12 @@
 ## Create a pod in the Contino namespace
 
-We are using a nginx docker image to create our pod:
 
 ```
 apiVersion: v1
 kind: Pod
 metadata:
   name: contino-pod
+  namespace: contino
 spec:
   containers:
   - name: nginx
@@ -19,8 +19,12 @@ spec:
 
 ## Validation
 
-**List pods up:**
+**List our pod up:**
 
 `kubectl get pods`{{execute}}
 
-As we didn't set any namespaces, Kubernetes uses default namespace to deploy it.
+Oops! What's going on? I can't see my pod!
+
+We need to specify the namespace from where we want to retrieve the pods:
+
+`kubectl get pods -n contino`{{execute}}

@@ -6,10 +6,10 @@
   "details": {
     "steps": [
       { "title": "Kubernertes Namespaces", "text": "k8s-namespaces.md"},
-      { "title": "Create contino namespace", "text": "contino-namespace.md"},
+      { "title": "Create contino namespace", "text": "new-namespace.md"},
       { "title": "Create a pod", "text": "pod-yaml.md"},
-      { "title": "Schedule a pod into the Contino namespace", "text": "contino-pod-namespace.md"},
-      { "title": "Configure label, port and docker image", "text": "contino-pod-port-label.md"},
+      { "title": "Schedule a pod into the Contino namespace", "text": "pod-namespace.md"},
+      { "title": "Configure label, port and docker image", "text": "pod-port-label.md"},
       { "title": "Pod Node Selector", "text": "pod-nodeselector.md"}
     ],
     "intro": {

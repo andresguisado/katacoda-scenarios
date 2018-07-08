@@ -2,15 +2,14 @@
 
 1- Add three labels:
 ```
-app: nginx
-segment: frontend
+app: redis
 company: contino
 ```
 2- Configure 80 port:
 ```
 ports:
-      - name: web
-        containerPort: 80
+      - name: redisport
+        containerPort: 6379
         protocol: TCP
 ```
 3- Modify docker image to the following one:
@@ -28,16 +27,16 @@ metadata:
   name: frontend-pod
   namespace: contino
   labels:
-    app: nginx
+    app: redis
     segment: frontend
     company: contino
 spec:
   containers:
-  - name: nginx
-    image: nginx
+  - name: redis
+    image: redis
     ports:
-    - name: web
-      containerPort: 80
+    - name: redisport
+      containerPort: 6379
       protocol: TCP
 ```
 

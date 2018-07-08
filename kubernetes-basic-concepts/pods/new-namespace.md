@@ -1,8 +1,9 @@
+
 ## Tasks
 
-Create **contino** namespace:
+Create **dev-service1** namespace:
 
-`kubectl create namespace contino`{{execute}}
+`kubectl create namespace dev-service1`{{execute}}
 
 ## Validation
 

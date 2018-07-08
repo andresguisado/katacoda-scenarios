@@ -1,8 +1,16 @@
-**Pod** is the smallest concept we have in Kubernetes. It is not a container, Pod can consist of one or more containers.
 
-## Create a pod
+Kubectl gives us a way to communicate with the Kubernetes API but most likely you are going to use YAML files in order to create cluster configuration and objects. 
 
-We are using a nginx docker image to create our pod:
+By using a yaml file we are going to create a Pod. Let's begin!
+
+## Kubernetes API Reference 
+
+Every Kubernetes object has an API specification and this specification can be write it down in a YAML file.
+In this exercise, we can check the Pod specification out at the [Kubernetes API](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#pod-v1-core).
+
+Therefore, Kubernetes API Reference is helping us out to configure Kubernetes object.
+
+We are going to use the following Pod specification for this exercise:
 
 ```
 apiVersion: v1
@@ -15,14 +23,16 @@ spec:
     image: nginx
 ```
 
-**Let's create the above pod:** 
+## Create Pod
 
-`kubectl apply -f contino-pod.yaml`{{execute}}
+By using kubectl we authenticate against the Kubernetes API and apply our object into the Kubernetes Cluster:
+
+`kubectl apply -f pod.yaml`{{execute}}
 
 ## Validation
 
-**List pods up:**
+In order to see our pod running we need to ask the Kubernetes API for the pods as follows:
 
 `kubectl get pods`{{execute}}
 
-As we didn't set any namespaces, Kubernetes uses default namespace to deploy it.
+Notice that it is running on default namespace since we didn't set any namespace in our specification. Kubernetes uses default namespace to deploy objects when you don't specify this.
