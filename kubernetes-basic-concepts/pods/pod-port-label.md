@@ -1,5 +1,3 @@
-## Tasks
-
 Modify ```pod-namespace.yaml``` file, adding the following fields:
 
 1. Add pods labels:

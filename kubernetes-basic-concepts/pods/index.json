@@ -5,12 +5,12 @@
   "time": "5 minutes",
   "details": {
     "steps": [
-      { "title": "Kubernertes Namespaces", "text": "k8s-namespaces.md"},
-      { "title": "Create contino namespace", "text": "new-namespace.md"},
+      { "title": "Namespaces", "text": "k8s-namespaces.md"},
+      { "title": "Create a new namespace", "text": "new-namespace.md"},
       { "title": "Create a pod", "text": "pod-yaml.md"},
-      { "title": "Schedule a pod into the Contino namespace", "text": "pod-namespace.md"},
-      { "title": "Configure label, port and docker image", "text": "pod-port-label.md"},
-      { "title": "Pod Node Selector", "text": "pod-nodeselector.md"}
+      { "title": "Schedule a pod into a namespace", "text": "pod-namespace.md"},
+      { "title": "Configure/Update label, port and container image", "text": "pod-port-label.md"},
+      { "title": "Set up a Pod Node Selector", "text": "pod-nodeselector.md"}
     ],
     "intro": {
       "text": "intro.md",

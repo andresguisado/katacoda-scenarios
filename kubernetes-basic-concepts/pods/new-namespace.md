@@ -1,5 +1,3 @@
-## Tasks
-
 Create a namespace can be done by a single command. 
 
 Let's create **dev-service1** namespace:
