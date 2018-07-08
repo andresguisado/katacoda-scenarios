@@ -16,14 +16,21 @@ A pod can be updated by applying a yaml file, let's apply our ```pod-update.yaml
 
 ### Didn't it work? What happend?
 
-Ok, let's review ports field at the [Kubernetes API Reference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#container-v1-core) :
+The error we are getting is the following:
+
+```
+The Pod "happypanda" is invalid: spec: Forbidden: pod updates may not change fields other than `spec.containers[*].image`, `spec.initContainers[*].image`, `spec.activeDeadlineSeconds` or `spec.tolerations` (only additions to existing tolerations)
+```
+
+Ok, let's review the [Kubernetes API Reference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#container-v1-core) and we can find the following statement in containers ports specification:
 
 <p style="text-align:center;"><img src="/andresguisado/courses/kubernetes-basic-concepts/pods/assets/ports.png" alt="Ports"></p>
 
 
-In Kubernetes, there're some fields can't be updated, you can find them at the Kubernetes API Reference.
+In Kubernetes, there're some fields can't be updated. Kubernetes API Reference is helping you out to know the API restrictions and the exact object specification which are available.
 
-In order to update those fields, we should delete the pod and create it up again.
+In order to update those forbidden updates, we should delete the pod and create it up again.
+We could bypass these situations with "deployments" which we will cover in other chapter.
 
 ### Fixing it 
 
