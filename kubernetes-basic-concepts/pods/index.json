@@ -20,7 +20,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [{"file": "*", "target": "/root"}]
+      "host01": [{"file": "*.yaml", "target": "/root"}]
     }
   },
   "environment": {
