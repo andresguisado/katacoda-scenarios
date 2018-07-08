@@ -1,5 +1,7 @@
 
-Click on the ```pod-namespace.yaml``` file that you can find in the editor panel on the right. Notice that it has been configured to schedule a pod in *dev-service1* namespace.
+Click on the ```pod-namespace.yaml``` file that you can find in the editor panel on the right.
+
+Notice that happy panda pod has been configured to be scheduled in **dev-service1** namespace.
 
 Let's apply this yaml file:
 
@@ -7,6 +9,8 @@ Let's apply this yaml file:
 
 ## Validation
 
-List pods up from dev-service1 namespace:
+Let's have a look at pods running in **dev-service1** namespace:
 
 `kubectl get pods -n dev-service1`{{execute}}
+
+Great! happypanda pod is running in dev-service1!

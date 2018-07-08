@@ -4,7 +4,7 @@ Let's create **dev-service1** namespace:
 
 `kubectl create namespace dev-service1`{{execute}}
 
-Or you can create a YAML file and apply it, just any other Kubernetes resource:
+Or you can create a YAML file and apply it, just like any other Kubernetes resource:
 
 ```
 kind: Namespace
@@ -21,7 +21,7 @@ List namespaces up:
 
 ## Delete a Namespace
 
-There are two options here, we can use the same yaml file or a single command:
+To delete a namespace there are two options, we can use a yaml file or a single command:
 
 `kubectl delete -f test-namespace.yaml`{{execute}}
 
@@ -33,5 +33,5 @@ Check test namespaces has been successfully deleted:
 
 `kubectl get namespaces`{{execute}}
 
-We are not going to remove ```dev-service1``` namespace as we will use it.
+>We are not going to remove ```dev-service1``` namespace as we will use it.
 
