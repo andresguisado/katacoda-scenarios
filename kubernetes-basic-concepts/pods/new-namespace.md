@@ -29,4 +29,9 @@ There are two options here, we can use the same yaml file or a single command:
  
 `kubectl delete namespace test`{{execute}}
 
+Check test namespaces has been successfully deleted:
+
+`kubectl get namespaces`{{execute}}
+
 We are not going to remove ```dev-service1``` namespace as we will use it.
+
