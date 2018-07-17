@@ -1,2 +1,2 @@
-mkdir /pods-manifests
+mkdir /manifests
 launch.sh

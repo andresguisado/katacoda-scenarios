@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: mybashjob
+spec:
+  template:
+    spec:
+      containers:
+      - name: mycontainer
+        image: bash
+        command: ["/bin/bash",  "-c"]
+        args: ["echo 1; ls -la; echo done"]
