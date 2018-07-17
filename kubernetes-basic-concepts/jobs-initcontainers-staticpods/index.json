@@ -11,7 +11,7 @@
     ],
     "intro": {
       "text": "intro.md",
-      "code": "set-env.sh"
+      "host01": [{"code": "set-env.sh"}]
     },
     "finish": {
       "text": "finish.md"
