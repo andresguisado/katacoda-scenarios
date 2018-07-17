@@ -18,11 +18,12 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [{"file": "*.yaml", "target": "/manifests"}]
+      "file": "*.yaml", "target": "/manifests"
     }
   },
   "environment": {
     "uilayout": "editor-terminal",
+    "uieditorpath": "/manifests",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
   },
   "backend": {
