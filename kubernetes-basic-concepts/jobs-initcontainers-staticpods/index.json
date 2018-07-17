@@ -11,7 +11,8 @@
     ],
     "intro": {
       "text": "intro.md",
-      "host01": [{"code": "set-env.sh"}]
+      "courseData": "courseBase.sh",
+      "code": "set-env.sh"
     },
     "finish": {
       "text": "finish.md"
