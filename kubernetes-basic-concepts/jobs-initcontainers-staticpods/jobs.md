@@ -9,3 +9,4 @@ Look at the file `job.yaml`{{open}} . This example create a job which run a bash
 Create a job:
 
 `kubectl apply -f /manifests/job.yaml`{{execute}}
+
