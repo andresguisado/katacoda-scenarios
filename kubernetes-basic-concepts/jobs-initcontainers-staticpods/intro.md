@@ -3,7 +3,7 @@ This scenario provides an overview of Jobs, Cron Jobs, Init Containers and Stati
 
 [Jobs resources](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/) create one or more pods and ensures that all of them successfully terminate.
 
-[Cron Jobs](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/) resources are useful for creating periodic and recurring tasks, e.g running backups or sending emails.
+[Cron Jobs](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/) create a job object, they are useful for creating periodic and recurring tasks, e.g running backups or sending emails.
 
 [Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/) are regular containers that run before app containers, they can run setup scripts not present in an app container. A pod can have one or more init containers apart of app containers.
 
@@ -12,5 +12,5 @@ The peculiarities of init containers are:
 * They always run to completation
 * Each one must complete successfully before the next one is started.
 
-[Static Pods](https://kubernetes.io/docs/tasks/administer-cluster/static-pod/) is a pod watched by kubelet on a specific node. Kubelet is in charge of restarting it when it crashes. 
+[Static Pods](https://kubernetes.io/docs/tasks/administer-cluster/static-pod/) is a pod created and watched by kubelet on a specific node. Kubelet is in charge of restarting it when it crashes. 
 

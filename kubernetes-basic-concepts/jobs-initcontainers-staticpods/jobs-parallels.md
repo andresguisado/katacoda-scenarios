@@ -22,8 +22,10 @@ And then:
 
 `kubectl logs <some-above-pod-name>`{{execute}}
 
-### Delete Logs
+### Delete Job
 
 `kubectl delete -f /manifests/jobs-parallels.yaml`{{execute}}
 
+or 
 
+`kubectl delete job countdown`{{execute}}

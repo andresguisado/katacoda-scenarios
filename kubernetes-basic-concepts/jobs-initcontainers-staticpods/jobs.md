@@ -8,7 +8,7 @@ Pods created by jobs are not deleted. Keeping them around allows you to still vi
 
 ## Create Countdown Job
 
-Look at the file `job.yaml`{{open}}. This example create a job which run a bash command to countdown from 10 to 1.
+Look at the file `job.yaml`{{open}}. This example create a job which runs a bash command to countdown from 10 to 1.
 
 Note that `spec.restartPolicy` in Job resources just support values: "OnFailure" or "Never" further info [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#example-states)
 
@@ -33,6 +33,10 @@ And then:
 
 `kubectl logs <above-pod-name>`{{execute}}
 
-### Delete Logs
+### Delete Job
 
 `kubectl delete -f /manifests/job.yaml`{{execute}}
+
+or 
+
+`kubectl delete job countdown`{{execute}}
