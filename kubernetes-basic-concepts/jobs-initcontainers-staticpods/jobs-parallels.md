@@ -18,9 +18,9 @@ In order to see the job's logs we need to know the pod created:
 
 `kubectl get pods | grep countdown`{{execute}}
 
-And then:
+And then type:
 
-`kubectl logs <some-above-pod-name>`{{execute}}
+`kubectl logs <some-above-pod-name>`
 
 ### Delete Job
 

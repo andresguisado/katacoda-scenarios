@@ -18,7 +18,7 @@ Watch the job until it runs for the firts time:
 
 Check the cron job again, you should see that the cronjob has been scheduled at the time specified in `LAST-SCHEDULE`:
 
-`kubectl get crojob hello`{{execute}}
+`kubectl get cronjob hello`{{execute}}
 
 ### Cron Job Logs
 
