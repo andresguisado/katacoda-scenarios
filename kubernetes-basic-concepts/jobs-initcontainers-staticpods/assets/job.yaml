@@ -8,5 +8,6 @@ spec:
       containers:
       - name: mycontainer
         image: bash
-        command: ["/bin/bash",  "-c"]
-        args: ["echo 1; ls -la; echo done"]
+        command: ["/bin/sh",  "-c"]
+        args: ["echo ----; ls -la; echo done"]
+      restartPolicy: OnFailure
