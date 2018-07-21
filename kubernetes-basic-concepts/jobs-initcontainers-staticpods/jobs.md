@@ -4,23 +4,37 @@ Therefore with Jobs, we can run a work items such as frames to be rendered, file
 
 Take a look at [Jobs Api reference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.11/#job-v1-batch) to see how to build a job resource in Kubernetes.
 
-## Simple Job
+Pods created by jobs are not deleted. Keeping them around allows you to still view the logs of completed pods to check for errors. If you want to remove them, you need to do that manually.
 
-Look at the file `job.yaml`{{open}}. This example create a simple job which run a bash command 
+## Create Countdown Job
 
-Create a job:
+Look at the file `job.yaml`{{open}}. This example create a job which run a bash command to countdown from 10 to 1.
+
+Note that `spec.restartPolicy` in Job resources just support values: "OnFailure" or "Never" further info [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#example-states)
+
+> **Note:** There're situations where you want to fail a job after some ammount of retries, to do so use `spec.backoffLimit`. It is set by default to 6.
+> You could want to manage the duration of the job, not matter how many Pods are created. You can use `spec.activeDeadlineSeconds` and once a Job reaches `spec.activeDeadlineSeconds`, the Job and all of its Pods are terminates.
+
+### Create the job
 
 `kubectl apply -f /manifests/job.yaml`{{execute}}
 
-Let's check the status of the job:
+### Job status
 
-`kubectl get pods`{{execute}}
+The job has been successfully completed:
 
-Type the following command to see the pod's logs:
+`kubectl get jobs`{{execute}}
 
-`kubectl logs <above-output-pod-name>`
+### Job Logs
 
+In order to see the job's logs we need to know the pod created:
 
-## Parallelism and Completions
+`kubectl get pods | grep countdown`{{execute}}
 
-specifying parallelism and completions.
+And then:
+
+`kubectl logs <above-pod-name>`{{execute}}
+
+### Delete Logs
+
+`kubectl delete -f /manifests/job.yaml`{{execute}}

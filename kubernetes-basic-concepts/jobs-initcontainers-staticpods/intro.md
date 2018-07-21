@@ -1,6 +1,5 @@
 
-This chapter provides an overview of Jobs, Cron Jobs, Init Containers and Static Pod in Kubernetes.
-
+This scenario provides an overview of Jobs, Cron Jobs, Init Containers and Static Pod in Kubernetes.
 
 [Jobs resources](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/) create one or more pods and ensures that all of them successfully terminate.
 
@@ -13,6 +12,5 @@ The peculiarities of init containers are:
 * They always run to completation
 * Each one must complete successfully before the next one is started.
 
-
-[Static Pods](https://kubernetes.io/docs/tasks/administer-cluster/static-pod/) 
+[Static Pods](https://kubernetes.io/docs/tasks/administer-cluster/static-pod/) is a pod watched by kubelet on a specific node. Kubelet is in charge of restarting it when it crashes. 
 

@@ -3,6 +3,8 @@ kind: Job
 metadata:
   name: countdown
 spec:
+  completions: 8
+  parallelism: 2
   template:
     spec:
       containers:
