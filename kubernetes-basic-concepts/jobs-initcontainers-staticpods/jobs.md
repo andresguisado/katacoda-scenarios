@@ -13,7 +13,7 @@ Look at the file `job.yaml`{{open}}. This example create a job which run a bash 
 Note that `spec.restartPolicy` in Job resources just support values: "OnFailure" or "Never" further info [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#example-states)
 
 > **Note:** There're situations where you want to fail a job after some ammount of retries, to do so use `spec.backoffLimit`. It is set by default to 6.
-> You could want to manage the duration of the job, not matter how many Pods are created. You can use `spec.activeDeadlineSeconds` and once a Job reaches `spec.activeDeadlineSeconds`, the Job and all of its Pods are terminates.
+> You could want to manage the duration of the job, not matter how many Pods are created. You can use `spec.activeDeadlineSeconds` and once a Job reaches this value(in sec), the Job and all of its Pods are terminates.
 
 `kubectl apply -f /manifests/job.yaml`{{execute}}
 
