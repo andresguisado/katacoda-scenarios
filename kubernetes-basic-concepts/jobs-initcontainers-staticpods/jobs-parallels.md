@@ -1,8 +1,8 @@
 To create parallel jobs we can use ` spec.parallelism` to set how many pod can run in parallel. Also, we can setup a number of completations for the jobs implemented.
 
-Look at the file `job-para-comp.yaml`{{open}}. This is the same previous `countdown` job but we added `spec.parallelism` and `spec.complettions`. The job will run 2 pods in parallel until reach 8 completions successfully.
+## Create Countdown Parallel Job
 
-### Create Countdown Parallel Job
+Look at the file `job-para-comp.yaml`{{open}}. This is the same previous `countdown` job but we added `spec.parallelism` and `spec.complettions`. The job will run 2 pods in parallel until reach 8 completions successfully.
 
 `kubectl apply -f /manifests/jobs-parallels.yaml`{{execute}}
 

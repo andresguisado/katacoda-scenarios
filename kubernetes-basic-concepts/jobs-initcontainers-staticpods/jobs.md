@@ -15,8 +15,6 @@ Note that `spec.restartPolicy` in Job resources just support values: "OnFailure"
 > **Note:** There're situations where you want to fail a job after some ammount of retries, to do so use `spec.backoffLimit`. It is set by default to 6.
 > You could want to manage the duration of the job, not matter how many Pods are created. You can use `spec.activeDeadlineSeconds` and once a Job reaches `spec.activeDeadlineSeconds`, the Job and all of its Pods are terminates.
 
-### Create the job
-
 `kubectl apply -f /manifests/job.yaml`{{execute}}
 
 ### Job status
