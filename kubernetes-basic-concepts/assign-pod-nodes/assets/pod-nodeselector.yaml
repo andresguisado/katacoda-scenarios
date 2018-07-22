@@ -16,4 +16,4 @@ spec:
       containerPort: 6379
       protocol: TCP
   nodeSelector:
-    hostname: node01
+    disk: ssd
