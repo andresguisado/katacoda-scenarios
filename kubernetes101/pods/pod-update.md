@@ -24,7 +24,7 @@ The Pod "happypanda" is invalid: spec: Forbidden: pod updates may not change fie
 
 Ok, let's review the [Kubernetes API Reference](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#container-v1-core) and we can find the following statement in containers ports specification:
 
-<p style="text-align:center;"><img src="/andresguisado/courses/kubernetes-basic-concepts/pods/assets/ports.png" alt="Ports"></p>
+<p style="text-align:center;"><img src="assets/ports.png" alt="Ports"></p>
 
 
 In Kubernetes, there're some fields can't be updated. Kubernetes API Reference is helping you out to know the API restrictions and the exact object specification which are available.
