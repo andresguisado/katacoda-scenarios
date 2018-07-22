@@ -6,7 +6,7 @@
 
 **Volume** serves data to the pod.
 
-<p style="text-align:center;"><img src="/basiafusinska/courses/kubernetes101/pods/assets/pod.png" alt="Pod"></p>
+<p style="text-align:center;"><img src="/andresguisado/courses/kubernetes101/pods/assets/pod.png" alt="Pod"></p>
 
 > **NOTE:** Don’t use naked Pods (that is, Pods not bound to a ReplicaSet or Deployment) if you can avoid it. Naked Pods will not be rescheduled in the event of a node failure. Fro further information in [Best Practices](https://kubernetes.io/docs/concepts/configuration/overview/)
 
