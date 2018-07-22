@@ -11,7 +11,7 @@
       {
         "course_id": "assign-pod-nodes",
         "title": "Assign pods to nodes",
-        "description": "Introduction to Node Selector"
+        "description": "Introduction to Node Selector and Affinity"
       },
       {
         "course_id": "jobs-initcontainers-staticpods",
