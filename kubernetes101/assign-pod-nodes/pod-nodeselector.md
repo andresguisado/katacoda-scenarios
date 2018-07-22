@@ -7,7 +7,7 @@ If the label specified as `nodeSelector` doesn't exist in any node, the pod won'
 ## Schedule happypanda pod to node01 by using nodeSelector(disk=ssd)
 
 ### Discover node labels
-First of all, we need to know what the node labels are:
+First of all, we have a look at the current node labels:
 
 `kubectl get nodes --show-labels`{{execute}}
 
