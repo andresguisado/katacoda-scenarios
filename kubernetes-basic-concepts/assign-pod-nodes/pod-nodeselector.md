@@ -11,15 +11,18 @@ First of all, we need to know what the node labels are:
 `kubectl get nodes --show-labels`{{execute}}
 
 ### Add a new node label
+
+Adding a `disk=ssd` label to node01:
+
 `kubectl label nodes node01 disk=ssd`{{execute}}
 
-Check the lable we've just added is on node01:
+Check the `disk=ssd` label that we've just added is on node01:
 
 `kubectl get nodes --show-labels`{{execute}}
 
 ### Assign happypanda pod to node01, matching `disk:ssd` label
 
-Look at the file `pod-nodeselector.yaml`{{open}}:
+Look at the file `pod-nodeselector.yaml`:
 
 `cat /manifests/pod-nodeselector.yaml`{{execute}}
 

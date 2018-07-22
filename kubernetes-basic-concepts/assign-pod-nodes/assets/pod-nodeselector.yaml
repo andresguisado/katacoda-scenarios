@@ -2,11 +2,11 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: happypanda
-  namespace: dev-service1
   labels: 
     app: redis
     segment: backend
-    company: mycompany    
+    company: mycompany 
+    disk: ssd  
 spec:
   containers:
   - name: redis
