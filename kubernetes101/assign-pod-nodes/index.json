@@ -5,7 +5,9 @@
   "time": "3 minutes",
   "details": {
     "steps": [
-      { "title": "Node Selector", "text": "pod-nodeselector.md"}
+      { "title": "Node Selector", "text": "pod-nodeselector.md"},
+      { "title": "Node Affinity and Anti-Affinity", "text": "node-affinity-anti-affinity.md"},
+      { "title": "Pod Affinity and Anti-Affinity", "text": "pod-affinity-anti-affinity.md"}
     ],
     "intro": {
       "text": "intro.md",
@@ -19,8 +21,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+    "uilayout": "terminal-terminal"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running"
