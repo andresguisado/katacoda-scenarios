@@ -31,3 +31,22 @@ Note `nodeSelector` is matching `disk:ssd` label and then the scheduler will fit
 Create `happy panda` pod:
 
 `kubectl apply -f /manifests/pod-nodeselector.yaml`{{execute}}
+
+Check tha `happy panda` has been successfully scheduled on node01:
+
+`kubectl get pods -o wide`{{execute}}
+
+### Deleting happy panda pod and label
+
+Delete `happy panda` pod:
+
+`kubectl apply -f /manifests/pod-nodeselector.yaml`{{execute}} 
+
+or 
+
+`kubectl delete pod happypanda`{{execute}}
+
+Remove label from node01:
+
+`kubectl label node node01 disk-`{{execute}}
+
