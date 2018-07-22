@@ -6,6 +6,11 @@
 
 **Volume** serves data to the pod.
 
+<p align="center">
+![Web Console Login](assets/pod.png)
+</p>
+
+
 <p style="text-align:center;"><img src="/andresguisado/courses/kubernetes-basic-concepts/pods/assets/pod.png" alt="Pod"></p>
 
 
