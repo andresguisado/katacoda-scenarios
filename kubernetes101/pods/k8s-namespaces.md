@@ -8,8 +8,7 @@ Let's take a look at the initial Kubernetes namespaces:
 
 By default, Kubernetes comes with three namespaces. We can see them here:
 
-<p style="text-align:center;"><img src="assets/namespaces.png" alt="Namespaces"></p>
-
+![Namespaces](assets/namespaces.png)
 
 ### kube-system
 
