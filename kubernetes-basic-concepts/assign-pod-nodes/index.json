@@ -1,11 +1,11 @@
 {
-  "title": "Pod Node Selector",
-  "description": "Assign pod onto a node",
+  "title": "Assign pod to nodes",
+  "description": "Assign pod to nodes",
   "difficulty": "beginner",
   "time": "3 minutes",
   "details": {
     "steps": [
-      { "title": "Assign pods onto a node", "text": "pod-nodeselector.md"}
+      { "title": "Node Selector", "text": "pod-nodeselector.md"}
     ],
     "intro": {
       "text": "intro.md",

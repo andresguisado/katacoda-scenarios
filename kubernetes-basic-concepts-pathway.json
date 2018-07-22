@@ -9,8 +9,8 @@
         "description": "Introduction to Pods and Namespaces"
       },
       {
-        "course_id": "pods-nodeselector",
-        "title": "Pod - Node Selector",
+        "course_id": "assign-pod-nodes",
+        "title": "Assign pods to nodes",
         "description": "Introduction to Node Selector"
       },
       {
