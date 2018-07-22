@@ -1,9 +1,9 @@
-In the previous exercice, we have introduced `nodeSelector`  but using this is a hard conditions. If the condition is not met, the pod cannot be shceduled.
+In the previous exercice, we have introduced `nodeSelector`  but using this is a hard condition. If the condition is not met, the pod cannot be shceduled.
 `Node/Pod Affinity and Anti-Affinity` solves this issue by introducing soft and hard conditions.
 
 <p style="text-align:center;"><img src="/andresguisado/courses/kubernetes101/assign-pod-nodes/assets/type-affinity-anti-affinity.png" alt="Type_affinity_anti_affinity"></p>
 
->**Note**: As it is in beta we won't run any exercise but we will get through the basic concepts, for further info read [Affinity and Anti-Affinity](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity)
+>**Note**: It is a beta feature, we won't run any exercise of it but we will get through the basic concepts, for further info read [Affinity and Anti-Affinity](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity)
 
 ## Node Affinity
 

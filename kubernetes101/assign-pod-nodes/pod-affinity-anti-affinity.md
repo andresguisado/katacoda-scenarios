@@ -1,6 +1,6 @@
-`Node affinity` allows you to schedule pods on selective nodes. But what if you want to run pods along with other pods selectively? Pod affinity helps us with that.
+`Node affinity` allows you to schedule pods on selective nodes. But what if you want to run pods along with other pods selectively? **`Pod affinity`** helps us with that.
 
->**Note**: As it is in beta we won't run any exercise but we will get through the basic concepts, for further info read [Affinity and Anti-Affinity](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity)
+>**Note**: It is a beta feature, we won't run any exercise of it but we will get through the basic concepts, for further info read [Affinity and Anti-Affinity](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity)
 
 ### Pod Affinity
 Look at the [API Kubernetes Reference](https://v1-10.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#podaffinity-v1-core)
