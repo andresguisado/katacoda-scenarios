@@ -5,15 +5,14 @@
   "time": "5 minutes",
   "details": {
     "steps": [
-      { "title": "Jobs", "code": "set-env.sh", "text": "jobs.md"},
-      { "title": "Parallel Jobs", "code": "set-env.sh", "text": "jobs-parallels.md"},
-      { "title": "Cron Jobs", "code": "set-env.sh", "text": "cronjob.md"},
-      { "title": "Init Container", "code": "set-env.sh", "text": "initcontainer.md"}
+      { "title": "Jobs", "text": "jobs.md"},
+      { "title": "Parallel Jobs", "text": "jobs-parallels.md"},
+      { "title": "Cron Jobs", "text": "cronjob.md"},
+      { "title": "Init Container", "text": "initcontainer.md"}
     ],
     "intro": {
       "text": "intro.md",
-      "courseData": "courseBase.sh",
-      "credits": ""
+      "code": "set-env.sh"
     },
     "finish": {
       "text": "finish.md"

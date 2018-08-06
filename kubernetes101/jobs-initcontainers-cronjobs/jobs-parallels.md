@@ -2,9 +2,9 @@ To create a parallel job we can use ` spec.parallelism` to set how many pods we 
 
 ## Create Countdown Parallel Job
 
-Look at the file `job-para-comp.yaml`{{open}}.
+Look at the file `jobs-parallels.yaml`{{open}}.
 
-This is the same previous `countdown` job but we have added `spec.parallelism` and `spec.completions`. 
+This is the same `countdown` job then the previous scenario but we have added `spec.parallelism` and `spec.completions`. 
 
 The job will run 2 pods in parallel until it reaches 8 completions successfully.
 
@@ -18,6 +18,13 @@ Await for a few seconds to get the 8 completions and then check the status of th
 
 `kubectl get jobs`{{execute}}
 
+You should see a result like:
+
+`
+NAME        DESIRED   SUCCESSFUL   AGE
+countdown   8         8            16s
+`
+
 ### Job Logs
 
 In order to see the job's logs, we need to get the job name:
@@ -28,7 +35,7 @@ And then execute the following command to get the logs:
 
 ```
 kubectl logs `kubectl get pods -o 'jsonpath={.items[0].metadata.name}'`
-```
+```{{execute}}
 
 ### Delete Job
 

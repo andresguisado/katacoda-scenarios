@@ -8,7 +8,7 @@ This example runs an `init-container` which creates a helloworld file in a volum
 
 Create the init container:
 
-`kubectl apply -f init-container.yaml`{{execute}}
+`kubectl apply -f /manifests/init-container.yaml`{{execute}}
 
 It could get some time until the init container finish successfully and the pod run.
 
@@ -34,4 +34,4 @@ You should see a result like:
 
 or 
 
-`kubectl delete job happypanda`{{execute}}
+`kubectl delete pod happypanda`{{execute}}

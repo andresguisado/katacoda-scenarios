@@ -39,6 +39,21 @@ And then execute the following command to get the logs:
 kubectl logs `kubectl get pods -o 'jsonpath={.items[0].metadata.name}'` 
 ```{{execute}}
 
+You will get a result like:
+
+`
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Perfect!
+`
+
 ### Delete Job
 
 `kubectl delete -f /manifests/job.yaml`{{execute}}

@@ -1,5 +1,7 @@
 [Cron Job resources](https://kubernetes.io/docs/concepts/workloads/controllers/cron-jobs/) run a job periodically on a given schedule, written in a `Cron` format.
 
+They are useful for creating periodic and recurring tasks, e.g running backups or sending emails.
+
 ## Create Hello Cron Job
 
 Look at the file `cronjob.yaml`{{open}}. This example create a job every minute which prints the current time and a hello message.
@@ -10,11 +12,11 @@ Look at the file `cronjob.yaml`{{open}}. This example create a job every minute 
 
 After creating the cron job you can see that it hasn't been scheduled to execute yet(`LAST-SCHEDULE`):
 
-`kubectl get crojob hello`{{execute}}
+`kubectl get cronjob hello`{{execute}}
 
 Watch the job until it runs for the firts time:
 
-`kubectl get jobs -watch`{{execute}}
+`kubectl get cronjob -watch`{{execute}}
 
 Check the cron job again, you should see that the cronjob has been scheduled at the time specified in `LAST-SCHEDULE`:
 
