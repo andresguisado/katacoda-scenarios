@@ -8,8 +8,7 @@
       { "title": "Jobs", "code": "set-env.sh", "text": "jobs.md"},
       { "title": "Parallel Jobs", "code": "set-env.sh", "text": "jobs-parallels.md"},
       { "title": "Cron Jobs", "code": "set-env.sh", "text": "cronjob.md"},
-      { "title": "Init Container", "code": "set-env.sh", "text": "initcontainer.md"},
-      { "title": "Static Pod", "code": "set-env.sh", "text": "static-pod.md"}
+      { "title": "Init Container", "code": "set-env.sh", "text": "initcontainer.md"}
     ],
     "intro": {
       "text": "intro.md",
