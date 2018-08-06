@@ -22,12 +22,12 @@ Await for a few seconds to get the 8 completions and then check the status of th
 
 In order to see the job's logs, we need to get the job name:
 
-`kubectl get jobs -o 'jsonpath={.items[0].metadata.name}'`{{execute}}
+`kubectl get pods -o 'jsonpath={.items[0].metadata.name}'`{{execute}}
 
 And then execute the following command to get the logs:
 
 ```
-kubectl logs `kubectl get jobs -o 'jsonpath={.items[0].metadata.name}'`
+kubectl logs `kubectl get pods -o 'jsonpath={.items[0].metadata.name}'`
 ```
 
 ### Delete Job

@@ -17,6 +17,3 @@ There're two types of jobs:
 * They always run to completation
 * Each one must complete successfully before the next one is started
 * Application container won't run if any init container won't finish successfully
-
-[Static Pods](https://kubernetes.io/docs/tasks/administer-cluster/static-pod/) is a pod created and watched by kubelet on a specific node. Kubelet is in charge of restarting it when it crashes. 
-
