@@ -14,7 +14,7 @@ By default, Kubernetes comes with three namespaces. We can see them here:
 
 This namespace has objects created by Kubernetes system:
 
-`clear & kubectl get pods -n kube-system`{{execute}}
+`kubectl get pods -n kube-system; echo`{{execute}}
 
 Pods inside of this namespace are needed to make Kubernetes works, such as controllers and add-ons natively integrated with Kubernetes which we will talk later on
 
@@ -24,11 +24,11 @@ Pods inside of this namespace are needed to make Kubernetes works, such as contr
 
 This namespace just contains a configmap which has the [bootstrapping and certificate](https://kubernetes.io/docs/reference/access-authn-authz/bootstrap-tokens/) information of the K8s cluster:
 
-`clear & kubectl get pods -n kube-public`{{execute}}
+`kubectl get pods -n kube-public; echo`{{execute}}
 
 You don't see anything running in this namespace but we can see a ```cluster-info``` configmap:
 
-`clear & kubectl get configmap -n kube-public  cluster-info -o yaml`{{execute}}
+`kubectl get configmap -n kube-public  cluster-info -o yaml; echo`{{execute}}
 
 In addtion, this namespace might be treated as a namespace to run any object which should be visible and readable throughout the whole cluster since it is visible and readable from all parts of the Kubernetes cluster.
 
@@ -38,6 +38,6 @@ All objects created without specifying a namespace will automatically be created
 
 This namespace is empty and doesn't contain any objects:
 
-`clear & kubectl get pods -n default`{{execute}}
+`kubectl get pods -n default; echo`{{execute}}
 
 One thing to note about the `default` namespace is that it can't be deleted, unlike other namespaces within the Kubernetes cluster.
