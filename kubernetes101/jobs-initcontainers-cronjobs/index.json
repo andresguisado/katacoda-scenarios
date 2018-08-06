@@ -1,6 +1,6 @@
 {
-  "title": "Jobs, Init Containers and Static Pods",
-  "description": "Manage Jobs, Init Containers and Static Pods",
+  "title": "Jobs, Init Containers and Cron Jobs",
+  "description": "Manage Jobs, Init Containers and Cron Jobs",
   "difficulty": "beginner",
   "time": "5 minutes",
   "details": {
