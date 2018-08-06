@@ -18,24 +18,41 @@ Await for a few seconds to get the 8 completions and then check the status of th
 
 `kubectl get jobs`{{execute}}
 
-You should see a result like:
+You should see a result like (if not, wait and check again after a few seconds):
 
 `
 NAME        DESIRED   SUCCESSFUL   AGE
 countdown   8         8            16s
 `
+This job was executed successfully 8 time by keeping 2 jobs running in parallel.
 
 ### Job Logs
 
 In order to see the job's logs, we need to get the job name:
 
-`kubectl get pods -o 'jsonpath={.items[0].metadata.name}'`{{execute}}
+`kubectl get pods -o 'jsonpath={.items[0].metadata.name}'; echo`{{execute}}
 
 And then execute the following command to get the logs:
 
 ```
 kubectl logs `kubectl get pods -o 'jsonpath={.items[0].metadata.name}'`
 ```{{execute}}
+
+
+You will get a result like:
+
+`
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Perfect!
+`
 
 ### Delete Job
 

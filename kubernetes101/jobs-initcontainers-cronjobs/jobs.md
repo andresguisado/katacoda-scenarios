@@ -31,7 +31,7 @@ Check the status of the job:
 
 In order to see the job's logs we need to get the job name:
 
-`kubectl get pods -o 'jsonpath={.items[0].metadata.name}'`{{execute}}
+`kubectl get pods -o 'jsonpath={.items[0].metadata.name}'; echo`{{execute}}
 
 And then execute the following command to get the logs:
 

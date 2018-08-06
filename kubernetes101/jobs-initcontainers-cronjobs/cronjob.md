@@ -10,9 +10,17 @@ Look at the file `cronjob.yaml`{{open}}. This example create a job every minute 
 
 ### Cron Job status
 
-After creating the cron job you can see that it hasn't been scheduled to execute yet(`LAST-SCHEDULE`):
+Check the status of the cronjob:
 
 `kubectl get cronjob hello`{{execute}}
+
+After creating the cron job you can see that it hasn't been scheduled to execute yet by looking at `LAST-SCHEDULE` column:
+
+`
+master $ kubectl get cronjob hello
+NAME      SCHEDULE      SUSPEND   ACTIVE    LAST SCHEDULE   AGE
+hello     */1 * * * *   False     0         <none>          8s
+`
 
 Watch the job until it runs for the firts time:
 
@@ -26,7 +34,7 @@ Check the cron job again, you should see that the cronjob has been scheduled at 
 
 In order to see the job's logs, we need to know the pod created:
 
-`kubectl get pod -o 'jsonpath={.items[0].metadata.name}'`{{execute}}
+`kubectl get pod -o 'jsonpath={.items[0].metadata.name}'; echo`{{execute}}
 
 And then:
 
