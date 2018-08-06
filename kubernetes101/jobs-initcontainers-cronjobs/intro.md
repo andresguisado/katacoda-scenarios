@@ -1,5 +1,5 @@
 
-This scenario provides an overview of Jobs, Cron Jobs, Init Containers and Static Pod in Kubernetes.
+This scenario provides an overview of Jobs, Init Containers and Cron Jobs in Kubernetes.
 
 [Jobs resources](https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/) create one or more pods and ensures that all of them successfully terminate. 
 
@@ -10,7 +10,7 @@ There're two types of jobs:
 
 [Cron Jobs](https://kubernetes.io/docs/tasks/job/automated-tasks-with-cron-jobs/) create a job object, they are useful for creating periodic and recurring tasks, e.g running backups or sending emails.
 
-[Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/) are regular containers in a pod that run before the app container and also they satisfy the following statements:
+[Init Containers](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/) are regular containers within a pod that run before the app container and they also satisfy the following statements:
 
 * They can run setup scripts not present in an app container - e.g prepopulate some data, waiting until a specific service is up and running and etc.
 * A pod can have one or more init containers apart of app containers

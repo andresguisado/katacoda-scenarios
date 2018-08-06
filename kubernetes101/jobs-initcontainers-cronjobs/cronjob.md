@@ -22,13 +22,15 @@ Check the cron job again, you should see that the cronjob has been scheduled at 
 
 ### Cron Job Logs
 
-In order to see the job's logs we need to know the pod created:
+In order to see the job's logs, we need to know the pod created:
 
-`kubectl get pods | grep hello`{{execute}}
+`kubectl get cronjob -o 'jsonpath={.items[0].metadata.name}'`{{execute}}
 
 And then:
 
-`kubectl logs <some-above-pod-name>`{{execute}}
+```
+kubectl logs `kubectl get cronjob -o 'jsonpath={.items[0].metadata.name}'`
+```
 
 ### Delete Cron Job
 

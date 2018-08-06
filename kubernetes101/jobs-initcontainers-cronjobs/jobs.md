@@ -12,10 +12,12 @@ Look at the file `job.yaml`{{open}}.
 
 This example creates a job which runs a bash command to countdown from 10 to 1.
 
-Notice that the field `spec.restartPolicy` just support two values: "OnFailure" or "Never", for further information read [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#example-states)
+Notice that the field `spec.restartPolicy` just allow two values: "OnFailure" or "Never", for further information read [here](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#example-states)
 
 > **Note:** There're situations where you want to fail a job after some ammount of retries, to do so use `spec.backoffLimit`. It is set by default to 6.
 > You could want to manage the duration of the job, not matter how many Pods are created. You can use `spec.activeDeadlineSeconds` and once a Job reaches this value(in sec), the Job and all of its Pods are terminates.
+
+Create the countdown job:
 
 `kubectl apply -f /manifests/job.yaml`{{execute}}
 
@@ -33,7 +35,9 @@ In order to see the job's logs we need to get the job name:
 
 And then execute the following command to get the logs:
 
-`kubectl logs `kubectl get jobs -o 'jsonpath={.items[0].metadata.name}'` `
+```
+kubectl logs `kubectl get jobs -o 'jsonpath={.items[0].metadata.name}'` 
+```{{execute}}
 
 ### Delete Job
 
