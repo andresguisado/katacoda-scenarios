@@ -14,13 +14,13 @@ It could get some time until the init container finish successfully and the pod 
 
 ### Pod status
 
-Check the status of the pod:
+Init container get some time until it creates the file so you could have to check the status of the pod couple of times:
 
 `kubectl get pods`{{execute}}
 
 If the pod is running means that the file was created and the pod can read it.
 
-We are going to check it out manually:
+We are going to check manually that the file is there with the correct content:
 
 `kubectl exec -ti happypanda -- cat /opt/workdir/helloworld `{{execute}}
 

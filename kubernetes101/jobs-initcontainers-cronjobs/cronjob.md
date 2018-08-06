@@ -14,7 +14,7 @@ Check the status of the cronjob:
 
 `kubectl get cronjob hello`{{execute}}
 
-After creating the cron job you can see that it hasn't been scheduled to execute yet by looking at `LAST-SCHEDULE` column:
+After creating the cron job you can see, by looking at `LAST-SCHEDULE` column, that it hasn't been scheduled yet:
 
 `
 master $ kubectl get cronjob hello
@@ -22,9 +22,9 @@ NAME      SCHEDULE      SUSPEND   ACTIVE    LAST SCHEDULE   AGE
 hello     */1 * * * *   False     0         <none>          8s
 `
 
-Watch the job until it runs for the firts time:
+Watch the job until `LAST-SCHEDULE` column get a value, it means it began to run:
 
-`kubectl get cronjob -watch`{{execute}}
+`kubectl get cronjob ---watch`{{execute}}
 
 Check the cron job again, you should see that the cronjob has been scheduled at the time specified in `LAST-SCHEDULE`:
 
@@ -40,7 +40,7 @@ And then:
 
 ```
 kubectl logs `kubectl get pod -o 'jsonpath={.items[0].metadata.name}'`
-```
+```{{execute}}
 
 ### Delete Cron Job
 

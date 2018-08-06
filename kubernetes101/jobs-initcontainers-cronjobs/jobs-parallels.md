@@ -18,12 +18,13 @@ Await for a few seconds to get the 8 completions and then check the status of th
 
 `kubectl get jobs`{{execute}}
 
-You should see a result like (if not, wait and check again after a few seconds):
+You should see a result like the following if not, wait for a few seconds and check again:
 
 `
 NAME        DESIRED   SUCCESSFUL   AGE
 countdown   8         8            16s
 `
+
 This job was executed successfully 8 time by keeping 2 jobs running in parallel.
 
 ### Job Logs
