@@ -8,7 +8,10 @@
       { "title": "Exercise 1", "text": "exercise1.md", "code": "exercise1.sh" },
       { "title": "Exercise 2", "text": "exercise2.md", "code": "exercise2.sh" },
       { "title": "Exercise 3", "text": "exercise3.md", "code": "exercise3.sh" },
-      { "title": "Exercise 4", "text": "exercise4.md", "code": "exercise4.sh" }
+      { "title": "Exercise 4", "text": "exercise4.md", "code": "exercise4.sh" },
+      { "title": "Exercise 5", "text": "exercise5.md", "code": "exercise5.sh" },
+      { "title": "Exercise 6", "text": "exercise6.md", "code": "exercise6.sh" },
+      { "title": "Exercise 7", "text": "exercise7.md", "code": "exercise7.sh" }
     ],
     "intro": {
       "text": "intro.md"
