@@ -1,5 +1,7 @@
-sleep 5
+sleep 1
+cd manifests
 ls
 kubectl run fix-me --image=nginx:3
-kubectl create -f nginx-deployment.yml
+kubectl apply -f nginx-deployment.yml
+sleep 2
 clear
