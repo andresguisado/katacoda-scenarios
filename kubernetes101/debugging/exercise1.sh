@@ -1,4 +1,5 @@
 mkdir manifests 
+launch.sh
 cd /manifests
 sleep 1
 ls
