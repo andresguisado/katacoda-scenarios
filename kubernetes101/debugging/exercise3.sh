@@ -1,4 +1,4 @@
-cd /manifests
+cd manifests
 sleep 1
 ls
 kubectl delete deploy crasher 

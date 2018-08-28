@@ -1,5 +1,5 @@
 mkdir manifests 
-cd /manifests
+cd manifests
 sleep 1
 ls
 kubectl run fix-me --image=nginx:3
