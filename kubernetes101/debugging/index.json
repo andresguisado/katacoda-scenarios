@@ -5,8 +5,10 @@
   "time": "10-15 minutes",
   "details": {
     "steps": [
-      { "title": "Exercise 1", "text": "exercise1.md", "code": "set-env.sh" },
-      { "title": "Exercise 2", "text": "exercise2.md", "code": "exercise2.sh" }
+      { "title": "Exercise 1", "text": "exercise1.md", "code": "exercise1.sh" },
+      { "title": "Exercise 2", "text": "exercise2.md", "code": "exercise2.sh" },
+      { "title": "Exercise 3", "text": "exercise3.md", "code": "exercise3.sh" },
+      { "title": "Exercise 4", "text": "exercise4.md", "code": "exercise4.sh" }
     ],
     "intro": {
       "text": "intro.md"

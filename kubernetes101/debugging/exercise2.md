@@ -1,0 +1,1 @@
+This cluster has a broken manually launched deployment.
