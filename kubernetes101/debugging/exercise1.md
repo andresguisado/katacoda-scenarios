@@ -1,9 +1,5 @@
-This cluster has a broken manually launched deployment.
+There're two broken pods.
 
-It also has a broken deployment create from a .yml file:
-
-`cat nginx-deployment.yml;echo`{{execute}}
-
-and a service that won't start:
+Also, try to create this service which won't start:
 
 `cat clusterip-service.yml;echo`{{execute}}
