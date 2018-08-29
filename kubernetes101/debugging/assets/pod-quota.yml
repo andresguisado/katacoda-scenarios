@@ -4,4 +4,4 @@ metadata:
   name: pod-demo
 spec:
   hard:
-    pods: "1"
+    pods: "2"
