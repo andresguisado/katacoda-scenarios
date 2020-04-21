@@ -44,16 +44,6 @@
         "description": "Introduction to Ingress"
       },   
       {
-        "course_id": "configmaps-secrets",
-        "title": "ConfigMaps and Secrets",
-        "description": "Introduction to ConfigMaps and Secrets"
-      },
-      {
-        "course_id": "volumes",
-        "title": "Volumes",
-        "description": "Introduction to Volumes"
-      },
-      {
         "course_id": "debugging",
         "title": "Debugging",
         "description": "Inspect,debugging and troubleshooting"
