@@ -1,8 +1,9 @@
 ## Overview
 
+You will face several kubernetes exercices where you will need to troubleshoot different broken **pods, deployment and services**:
 
- You should use the following commands to figure out why the services, deployments and pods are not working correctly:
- 
+In order to troubleshoot you want to use some of these followings k8s commands:
+
 ```
 kubectl describe deployment/<deployname>
 kubectl describe replicaset/<rsname>
@@ -11,4 +12,7 @@ kubectl get deployments
 kubectl get replicaset
 kubectl describe pod/<podname>
 kubectl logs <podname> --previous
+kubectl get events
 ```
+
+[**k8s cheatsheet**](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)

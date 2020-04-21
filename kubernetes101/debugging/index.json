@@ -14,7 +14,8 @@
       { "title": "Exercise 7", "text": "exercise7.md", "code": "exercise7.sh" }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "set-env.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -26,7 +27,7 @@
   },
   "environment": {
     "uilayout": "terminal-terminal",
-    "uieditorpath": "manifests",
+    "uieditorpath": "/manifests",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
   },
   "backend": {
