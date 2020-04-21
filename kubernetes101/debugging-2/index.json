@@ -1,14 +1,10 @@
 {
-  "title": "Manage Services",
-  "description": "Manage Services in this scenario.",
+  "title": "Debug Problems",
+  "description": "Debug some common problems",
   "difficulty": "beginner",
   "time": "10-15 minutes",
   "details": {
     "steps": [
-      { "title": "Launch Deployment", "text": "launch-deployment.md" },
-      { "title": "ClusterIP Service", "text": "clusterip.md" },
-      { "title": "NodePort Service", "text": "nodeport.md" },      
-      { "title": "LoadBalancer Service", "text": "loadbalancer.md" },
       { "title": "Exercise", "text": "exercise.md" }
     ],
     "intro": {

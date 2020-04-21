@@ -45,8 +45,13 @@
       },   
       {
         "course_id": "debugging",
-        "title": "Debugging",
-        "description": "Inspect,debugging and troubleshooting"
+        "title": "Debugging Part 1",
+        "description": "Part 1 - Inspect,debugging and troubleshooting"
+      },
+      {
+        "course_id": "debugging-2",
+        "title": "Debugging Part 2",
+        "description": "Part 2 - Inspect,debugging and troubleshooting"
       }
      ]
 }
